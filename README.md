@@ -1,89 +1,105 @@
 🏡 Base de Dados Imobiliária — Data Cleaning & Feature Engineering
-📌 Objetivo do Projeto
 
-Transformar um conjunto de dados imobiliários bruto em uma base limpa, estruturada e enriquecida, pronta para análises, visualizações e modelos de machine learning.
+Um projeto de limpeza, padronização e enriquecimento de dados imobiliários, transformando um dataset bruto em uma base estruturada, consistente e pronta para análises avançadas.
 
-🧹 Etapas Realizadas
-🔧 1. Padronização da Estrutura
+🧭 Objetivo
 
-Separação dos registros usando ; como delimitador.
+Criar um dataset totalmente limpo e organizado, aplicando:
 
-Organização dos dados em 13 colunas padronizadas:
+Tratamento de valores ausentes
 
-Tipo
+Padronização estrutural
 
-Bairro
+Conversão de tipos
 
-Quartos
+Engenharia de atributos
 
-Vagas
+Enriquecimento textual
 
-Suítes
+Perfeito para análises, dashboards e modelos de Machine Learning.
 
-Área
+🧹 1. Padronização da Estrutura
 
-Valor
+A base original estava unificada em uma única coluna com dados separados por ;.
+Após processamento, os dados foram divididos corretamente em 13 colunas:
 
-Condomínio
+# Tipo
 
-IPTU
+# Bairro
 
-Valor_por_mes
+# Quartos
 
-Valor_por_ano
+# Vagas
 
-Descricao
+# Suítes
 
-Possui_Suite
+# Área
+
+# Valor
+
+# Condomínio
+
+#IPTU
+
+# Valor_por_mes
+
+# Valor_por_ano
+
+# Descricao
+
+# Possui_Suite
 
 🧼 2. Tratamento de Valores Ausentes
 
-Remoção de nulos explícitos.
+Remoção de valores nulos explícitos
 
-Correção de campos vazios.
+Ajuste de campos vazios
 
-Garantia de 32960 registros sem valores faltantes.
+Garantia de 32960 registros completos
 
-🔍 3. Conversão de Tipos & Limpeza
+🔧 3. Conversão e Limpeza dos Dados
 
-Conversão de colunas numéricas que estavam como texto.
+Conversão de colunas numéricas armazenadas como texto
 
-Normalização de categorias.
+Normalização de categorias
 
-Ajuste de inconsistências após a separação dos campos.
+Correção de inconsistências pós-separação
 
 🛠 4. Engenharia de Atributos
 
-Criação de novas variáveis para enriquecer o dataset:
+Foram criadas novas variáveis para enriquecer o dataset:
 
-Valor_por_mes
+# Valor_por_mes
 
-Valor_por_ano
+# Valor_por_ano
 
-Possui_Suite (Sim/Não)
+# Possui_Suite
 
-Descrição completa gerada automaticamente para cada imóvel.
+Descrição completa gerada automaticamente
 
 📝 5. Enriquecimento Textual
 
-Criação de descrições padronizadas utilizando os atributos do imóvel.
+Cada imóvel recebe uma descrição padronizada baseada em suas características, ideal para:
 
-Preparação para análises baseadas em texto ou NLP.
+Análise textual
+
+NLP
+
+Busca e classificação
 
 📊 Resultado Final
 
-Base completa, limpa e consistente.
+Dataset totalmente preparado para:
 
-Pronta para:
+Análise exploratória (EDA)
 
-Análise exploratória
+Visualizações
 
-Visualização de dados
-
-Modelagem preditiva
+Machine Learning
 
 Criação de dashboards
 
 📁 Arquivos do Repositório
 
-dados_completos_dev.csv — Base final tratada.
+dados_completos_dev.csv
+ — Base final tratada
